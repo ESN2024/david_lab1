@@ -1,6 +1,9 @@
 #ignore persos
 lab1v1/*
 devkits/*
+.metadata/*
+simulation/*
+
 
 # C
 # Object files
