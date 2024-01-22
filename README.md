@@ -9,10 +9,9 @@ Dans un second temps nous allons coder un chenillard sur 10 LEDs. Ensuite, nous 
 
 Enfin, nous allons intancier comme périphériques au Nios2 les 10 SWitchs (SW) de la carte, 4 d'entre eux nous servirons à faire la gestion de la vistesse du chenillard sur 4 bits (16 vitesses différentes) en code C.
 
-# 1. Système minimal
-## 1.1. Description du système
-Le système est schématisé figure 1. Dans ce schéma nous pouvons trouver le Nios2, sa mémoire RAM, un JTAG UART qui permettra avec le BLASTER USB de téléverser notre code C et de debug sur console avec *le Nios2 command shell* et le programme *nios2-terminal*. Nous trouvons aussi un bus Avalon pour assuer la communication ainsi qu'un PIO qui permettra de contrôler la LED.
-![image](https://github.com/ESN2024/david_lab1/assets/124572489/e36e06b1-84fb-40ae-963d-e981dee50f39)
+# 1. Description du système
+Le système est schématisé figure 1. Dans ce schéma nous pouvons trouver le Nios2, sa mémoire RAM, un JTAG UART qui permettra avec le BLASTER USB de téléverser notre code C et de debug sur console avec *le Nios2 command shell* et le programme *nios2-terminal*. Nous trouvons aussi un bus Avalon pour assuer la communication ainsi que 3 PIOs qui permettront de contrôler les interfaces utilisateur de la carte.
+![image](https://github.com/ESN2024/david_lab1/assets/124572489/d0f4dc68-929b-4e74-b47d-84d8fc66b83c)
 *Figure 1. Schéma de principe du système minimal.*
 
 Les autres choses importantes à remarquer sont les différentes régions : la région blanche correspond à ce qui est câblé en Hardware sur la carte de développement. la région verte correspond quand à elle à ce qui est câblé sur le FPGA en HDL. Enfin, la partie bleue correspond à ce qui a été intancié par Qsys, nous avons utilisé ici des blocs IP (Intellectual Property) qui sont des descriptions VHDL de systèmes HDL complexes et fiables, comme notre Nios2.
