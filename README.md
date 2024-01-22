@@ -12,8 +12,17 @@ Enfin, nous allons intancier comme périphériques au Nios2 les 10 SWitchs (SW) 
 # 1. Description du système
 Le système est schématisé figure 1. Dans ce schéma nous pouvons trouver le Nios2, sa mémoire RAM, un JTAG UART qui permettra avec le BLASTER USB de téléverser notre code C et de debug sur console avec *le Nios2 command shell* et le programme *nios2-terminal*. Nous trouvons aussi un bus Avalon pour assuer la communication ainsi que 3 PIOs qui permettront de contrôler les interfaces utilisateur de la carte.
 ![image](https://github.com/ESN2024/david_lab1/assets/124572489/d0f4dc68-929b-4e74-b47d-84d8fc66b83c)
-*Figure 1. Schéma de principe du système minimal.*
+*Figure 1. Schéma de principe du système.*
 
 Les autres choses importantes à remarquer sont les différentes régions : la région blanche correspond à ce qui est câblé en Hardware sur la carte de développement. la région verte correspond quand à elle à ce qui est câblé sur le FPGA en HDL. Enfin, la partie bleue correspond à ce qui a été intancié par Qsys, nous avons utilisé ici des blocs IP (Intellectual Property) qui sont des descriptions VHDL de systèmes HDL complexes et fiables, comme notre Nios2.
 
 Pour finir sur la figure 1, il reste à décrire les différents outils qui ont été utilisés pour réaliser ce système. Commençons par le plus large pour zoomer en profondeur. Tout d'abord, la carte : nous nous sommes servis de la carte de développement DE10 Lite, nous nous sommes donc équipés de sa *Datasheet*. Se trouve ensuite le FPGA : pour câbler le FPGA, nous utilisons *Quartus* et nous programmons en *HDL*. La gestion des interfaces entre ces deux régions se fait sur l'outil *Pin Planner* de Quartus. Nous avons enfin utilisé l'outil *Platform Designer* pour intancier les blocs IP qui nous intéressaient. L'interface entre ces deux régions se faire par programmation HDL sous Quartus.
+
+La figure 2 présente le câblage du système sous Qsys.
+![image](https://github.com/ESN2024/david_lab1/assets/124572489/ab706760-c28c-4758-8bd3-4f50da1eedef)
+*Figure 2. Instanciation des blocs IP du système sous Qsys.*
+
+# 2. Résultats
+La vidéo 1 présente le résultat obtenu. Le chenillard est foncionnel et le système répond aux attentes listées en introduction.
+
+*Vidéo 1. Présentation du système en fonctionnement.*
