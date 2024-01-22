@@ -7,7 +7,7 @@ Enfin, nous allons intancier comme périphériques au Nios2 les 10 SWitchs (SW) 
 
 # 1. Système minimal
 ## 1.1. Description du système
-Le système est schématisé figure 1.
-![image](https://github.com/ESN2024/david_lab1/assets/124572489/1fa9f8ed-40a8-4df3-8b41-e6cadd677673)
+Le système est schématisé figure 1. Dans ce schéma nous pouvons trouver le Nios2, sa mémoire RAM, un JTAG UART qui permettra avec le BLASTER USB de téléverser notre code C et de debug sur console avec *le Nios2 command shell* et le programme *nios2-terminal*. Nous trouvons aussi un bus Avalon pour assuer la communication ainsi qu'un PIO qui permettra de contrôler la LED.
+![image](https://github.com/ESN2024/david_lab1/assets/124572489/e36e06b1-84fb-40ae-963d-e981dee50f39)
 *Figure 1. Schéma de principe du système minimal.*
 
