@@ -33,5 +33,5 @@ Les SW0, SW1, SW2 et SW3 permettent de faire varier la vitesse à laquelle le ch
 
 Le SW9 sert de *reset* pour le système.
 
-# 3. Conclusion
+# Conclusion
 A l'issue de ce TP, nous avons pu apprendre comment décrire un système SPS sur un FPGA, nous avons pu apprendre comment interfacer des périphériques externes au FPGA via l'outil *Pin Planner*, nous avons pu apprendre comment intancier des blocs IP via *Platform Designer* et nous avons, avec la suite de librairie HAL et en conception conjointe, codé en C et lancé un programme sur le SPS qui contrôle ces périphériques.
