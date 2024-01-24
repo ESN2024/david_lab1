@@ -1,14 +1,14 @@
-Fitter Status : Successful - Tue Jan 16 16:26:20 2024
-Quartus Prime Version : 18.1.1 Build 646 04/11/2019 SJ Standard Edition
+Fitter Status : Successful - Wed Jan 24 09:18:09 2024
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Lab1
 Top-level Entity Name : lab1_inst
 Family : MAX 10
 Device : 10M50DAF484C6GES
 Timing Models : Preliminary
-Total logic elements : 1,809 / 49,760 ( 4 % )
-    Total combinational functions : 1,658 / 49,760 ( 3 % )
-    Dedicated logic registers : 996 / 49,760 ( 2 % )
-Total registers : 996
+Total logic elements : 1,812 / 49,760 ( 4 % )
+    Total combinational functions : 1,661 / 49,760 ( 3 % )
+    Dedicated logic registers : 998 / 49,760 ( 2 % )
+Total registers : 998
 Total pins : 24 / 360 ( 7 % )
 Total virtual pins : 0
 Total memory bits : 331,264 / 1,677,312 ( 20 % )
