@@ -25,9 +25,9 @@ La figure 2 présente le câblage du système sous Qsys.
 # 2. Résultats
 La vidéo 1 présente le résultat obtenu. Le chenillard est foncionnel et le système répond aux attentes listées en introduction.
 
-*Vidéo 1. Présentation du système en fonctionnement.*
-
 https://github.com/ESN2024/david_lab1/assets/124572489/ca405763-dde9-405e-9894-7d60c40c4b40
+
+*Vidéo 1. Présentation du système en fonctionnement.*
 
 L'état (allumé ou éteint) du chenillard est contrôlé par le BP0 et entendu par le processeur comme interruption.
 
